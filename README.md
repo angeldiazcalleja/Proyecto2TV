@@ -49,6 +49,11 @@ En el desarrollo de la televisión, se han empleado las siguientes tecnologías:
 
 <img src= "/images/javascript.png" width="30"> JavaScript 
 
+
+Se ha empleado la biblioteca Google Fonts:
+
+<img src= "/images/googleFonts.png" width="70"> Google Fonts
+
 También haremos uso de las siguientes herramientas:
 
 <img src= "./images/visualstudio.png" width="40"> Visual Studio Code

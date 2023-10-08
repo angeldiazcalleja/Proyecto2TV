@@ -202,6 +202,7 @@ iframe {
   width: 12px;
   height: 12px;
   border-radius: 50%;
+  pointer-events: none;
 }
 #botonOn {
   width: 55px;
@@ -221,7 +222,7 @@ iframe {
     inset rgba(0, 0, 0, 0.15) 0 -2px 5px,
     /* inner shadow */ rgba(100, 100, 100, 0.6) 0 2px 1px,
     rgba(100, 100, 100, 0.6) 0 2px 1px; /* color border */
-}
+} 
 
 .television__base {
   width: 60%;
@@ -257,6 +258,26 @@ iframe {
   margin-top: 70px;
 }
 
+.power-button {
+	list-style-type: none;
+	background-color: black;
+	width: 20px;
+	height: 20px;
+	border-radius: 5px;
+	margin: 9px;
+    margin-top: 5em;
+	float: left;
+	position: relative;
+}
+
+.power-button.active {
+	background-color: grey; /* Cambia el color cuando está encendido */
+}
+
+.television__channel a.active {
+	pointer-events: auto;
+}
+
 @media only screen and (max-width: 1200px) {
   body {
     background-image: none;
@@ -276,9 +297,12 @@ iframe {
   }
 }
 
-
-
 @media only screen and (max-width: 950px) {
+
+   iframe{
+    max-width: 100%;
+   }
+
     .television {
     width: 28.1em;
     position: fixed;
@@ -333,13 +357,9 @@ iframe {
     width: 20px;
     height: 40px;
   }
-  #botonOn {
-    width: 35px;
-  }
-  .botonOn {
-    width: 2.2em;
-    height: 1.2em;
-    margin-top: 0.8em;
-    margin-left: 1em;
-  }
+
+.power-button {
+	margin-top: 1em;
+}
+
 }

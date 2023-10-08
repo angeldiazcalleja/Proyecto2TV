@@ -7,13 +7,40 @@ boton.addEventListener("click", function () {
   
 });
 
-
-
-let buttons = document.querySelectorAll(".television__channel a");
+var buttons = document.querySelectorAll(".television__channel a");
 for (let i = 0; i < buttons.length; i++) {
-  buttons[i].addEventListener("click", function (e) {
-    document.querySelector(".television__screen iframe").src = this.href;
-    e.preventDefault();
-  });
+	buttons[i].addEventListener("click", function (e) {
+		document.querySelector(".television__screen iframe").src = this.href;
+		e.preventDefault();
+	});
 }
 
+var buttons = document.querySelectorAll(".television__channel a");
+let powerButton = document.querySelector(".power-button");
+
+let isPowerOn = false; // Variable para rastrear si la televisión está encendida o apagada
+
+powerButton.addEventListener("click", function (e) {
+	if (isPowerOn) {
+		// Si la televisión está encendida, apágala
+		document.querySelector(".television__screen iframe").src = "";
+		isPowerOn = false;
+		// Desactiva todos los botones de canal
+		for (let i = 0; i < buttons.length; i++) {
+			buttons[i].classList.remove("active");
+		}
+		powerButton.classList.remove("active");
+	} else {
+		// Si la televisión está apagada, enciéndela
+		var defaultChannel =
+			"/images/friends.jpg"; // URL del canal predeterminado
+		document.querySelector(".television__screen iframe").src = defaultChannel;
+		isPowerOn = true;
+		// Activa el botón de encendido
+		powerButton.classList.add("active");
+		for (var i = 0; i < buttons.length; i++) {
+			buttons[i].classList.add("active");
+		}
+	}
+	e.preventDefault();
+});
