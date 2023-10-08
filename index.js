@@ -1,21 +1,28 @@
 const boton = document.getElementById("miBoton");
+let audioEtiqueta = document.querySelector("audio")
 // Agregar un evento de clic al botón
 boton.addEventListener("click", function () {
   // Ocultar la primera página y mostrar la segunda
   document.querySelector(".pagina-1").style.display = "none";
   document.querySelector(".pagina-2").style.display = "block";
-  
+  //Sonido al pulsar el botón
+  audioEtiqueta.setAttribute("src", "/audio/terrorVoices.mp3")
+      audioEtiqueta.play()
 });
 
-var buttons = document.querySelectorAll(".television__channel a");
+    boton.addEventListener("click", () => {
+      let etiquetaAudio = document.createElement("audio")
+      etiquetaAudio.setAttribute("src", "ubicación de tu archivo de audio")
+      etiquetaAudio.play()
+    })
+
+let buttons = document.querySelectorAll(".television__channel a");
 for (let i = 0; i < buttons.length; i++) {
 	buttons[i].addEventListener("click", function (e) {
 		document.querySelector(".television__screen iframe").src = this.href;
 		e.preventDefault();
 	});
 }
-
-var buttons = document.querySelectorAll(".television__channel a");
 let powerButton = document.querySelector(".power-button");
 
 let isPowerOn = false; // Variable para rastrear si la televisión está encendida o apagada
@@ -38,7 +45,7 @@ powerButton.addEventListener("click", function (e) {
 		isPowerOn = true;
 		// Activa el botón de encendido
 		powerButton.classList.add("active");
-		for (var i = 0; i < buttons.length; i++) {
+		for (let i = 0; i < buttons.length; i++) {
 			buttons[i].classList.add("active");
 		}
 	}
