@@ -29,9 +29,19 @@ El modelo y todos los detalles que incluye este proyecto están basados en las t
 <img src= "/images/background15.gif" width="500"> 
 
 
-La televisión dispone de 7 botones: 1 para apagar y encender y los otros 6 restantes para poder cambiar por los diferentes canales.
+La televisión dispone de 7 botones: 1 para apagar y encender y los otros 6 restantes para poder cambiar por los diferentes canales. Tenemos diferentes acciones en la tv:
+
+-Aspecto de la tv al entrar a la página.
 
 <img src= "/images/tvAspecto.png" width="500">
+
+-Aspecto de la tv encendida.
+
+<img src= "/images/tvEncendida.png" width="500">
+
+-Aspecto de la tv apagada.
+
+<img src= "/images/tvApagada.png" width="500">
 
 El resultado con todos los elementos integrados es el siguiente:
 

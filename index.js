@@ -32,7 +32,7 @@ powerButton.addEventListener("click", function (e) {
 		powerButton.classList.remove("active");
 	} else {
 		// Si la televisión está apagada, enciéndela
-		var defaultChannel =
+		let defaultChannel =
 			"/images/friends.jpg"; // URL del canal predeterminado
 		document.querySelector(".television__screen iframe").src = defaultChannel;
 		isPowerOn = true;
