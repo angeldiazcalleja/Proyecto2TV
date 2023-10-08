@@ -16,6 +16,8 @@ Nada más acceder encontramos un botón de presentación **DANGER** que al presi
 
 <img src= "images/imgInicioBoton.png" width="500"> 
 
+Además, otra de las funcionalidades del botón es lanzar un audio cuando sea pulsado, por lo que es necesario tener el audio del PC activado.
+
 La tv retro puede ejecutarse desde el navegador web y es capaz de realizar varias acciones: 
 
 -Pulsando el boton grande, la tv iniciará y aparecerá un fondo de presentación. Además, esta acción provocará que el resto de los 6 botones superiores tengan funcionalidad y permita cambiar de canal al pulsarlos. Una vez que el botón de encendido vuelve a presionarse, todo el proceso anterior se revierte.
@@ -46,7 +48,6 @@ La televisión dispone de 7 botones: 1 para apagar y encender y los otros 6 rest
 El resultado con todos los elementos integrados es el siguiente:
 
 <img src= "/images/pantallaPrincipal.png" width="500">
-
 
 
 ### Desarrollo.
