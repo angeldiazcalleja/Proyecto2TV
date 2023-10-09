@@ -1,5 +1,10 @@
+let buttons = document.querySelectorAll(".television__channel a");
 const boton = document.getElementById("miBoton");
 let audioEtiqueta = document.querySelector("audio")
+let powerButton = document.querySelector(".power-button");
+let isPowerOn = false;  // Variable para rastrear si la televisión está encendida o apagada
+
+
 // Agregar un evento de clic al botón
 boton.addEventListener("click", function () {
   // Ocultar la primera página y mostrar la segunda
@@ -10,22 +15,12 @@ boton.addEventListener("click", function () {
       audioEtiqueta.play()
 });
 
-    boton.addEventListener("click", () => {
-      let etiquetaAudio = document.createElement("audio")
-      etiquetaAudio.setAttribute("src", "ubicación de tu archivo de audio")
-      etiquetaAudio.play()
-    })
-
-let buttons = document.querySelectorAll(".television__channel a");
 for (let i = 0; i < buttons.length; i++) {
 	buttons[i].addEventListener("click", function (e) {
 		document.querySelector(".television__screen iframe").src = this.href;
 		e.preventDefault();
 	});
 }
-let powerButton = document.querySelector(".power-button");
-
-let isPowerOn = false; // Variable para rastrear si la televisión está encendida o apagada
 
 powerButton.addEventListener("click", function (e) {
 	if (isPowerOn) {

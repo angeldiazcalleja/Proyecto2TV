@@ -14,7 +14,7 @@ Proyecto 2 - TV con HTML, CSS Y JS
 
 Nada más acceder encontramos un botón de presentación **DANGER** que al presionarlo nos llevará a la siguiente y principal sección de nuestra página, donde se mostrará la tv creada para el proyecto. 
 
-<img src= "images/imgInicioBoton.png" width="500"> 
+ 
 
 Además, otra de las funcionalidades del botón es lanzar un audio cuando sea pulsado, por lo que es necesario tener el audio del PC activado.
 
